@@ -11,12 +11,14 @@
 		<form id="survey-form">
 			<label id="name-label" for="name">* Name: </label>
 			<input type="text" id="name" name="name" placeholder="name" required>
+
 			<label id="email-label" for="email">* Email: </label>
 			<input type="email" id="email" name="email" placeholder="email" required>
+
 			<label id="number-label" for="number">* Age:</label>
 			<input type="number" id="number" name="number" placeholder="1" min=1 max=100>
 			
-			<label id="dropdown1-label" for="dropdown">Which option best describes your current role?</label>
+			<p>Which option best describes your current role?</p>
 			<select id="dropdown" required>
 				<option value="">Select an option</option>
 				<option value="1">Student</option>
@@ -26,9 +28,18 @@
 				<option value="5">Other</option>
 			</select>
 
-<!-- add radio buttons here -->
+			<p>How likely would you recommend freeCodeCamp to a friend?</p>
+  				<input id="definitely" type="radio" name="like-fcc" value="definitely">
+  				<label id="definitely-label" for="definitely">Definitely</label>
 
-<label id="dropdown2-label" for="dropdown2">What do you like most in FCC?</label>
+  				<input id="maybe" type="radio" name="like-fcc" value="maybe">
+  				<label id="maybe-label" for="maybe">Maybe</label>
+
+  				<input id="not-sure" type="radio" name="like-fcc" value="not-sure">
+  				<label id="not-sure-label" for="not-sure">Not sure</label>
+			
+
+			<p>What do you like most in FCC?</p>
 			<select id="dropdown2" required>
 				<option value="">Select an option</option>
 				<option value="1">Challenges</option>
@@ -37,7 +48,43 @@
 				<option value="4">Open Source</option>
 			</select>
 
-<!-- add remaining form elements -->
+			<p>Things that should be improved in the future (Check all that apply): </p>
+  				<input id="improvement-1" type="checkbox" name="improvements" value="1">
+  				<label id="improvement-1-label" for="improvement-1">Front-end Projects</label>
+
+  				<input id="improvement-2" type="checkbox" name="improvements" value="2">
+  				<label id="improvement-2-label" for="improvement-2">Back-end Projects</label>
+
+  				<input id="improvement-3" type="checkbox" name="improvements" value="3">
+  				<label id="improvement-3-label" for="improvement-3">Data Visualization</label>
+
+  				<input id="improvement-4" type="checkbox" name="improvements" value="4">
+  				<label id="improvement-4-label" for="improvement-4">Challenges</label>
+
+  				<input id="improvement-5" type="checkbox" name="improvements" value="5">
+  				<label id="improvement-5-label" for="improvement-5">Open Source Community</label>
+
+  				<input id="improvement-6" type="checkbox" name="improvements" value="6">
+  				<label id="improvement-6-label" for="improvement-6">Gitter help rooms</label>
+
+  				<input id="improvement-7" type="checkbox" name="improvements" value="7">
+  				<label id="improvement-7-label" for="improvement-7">Videos</label>
+
+  				<input id="improvement-8" type="checkbox" name="improvements" value="8">
+  				<label id="improvement-8-label" for="improvement-8">City Meetups</label>
+
+  				<input id="improvement-9" type="checkbox" name="improvements" value="9">
+  				<label id="improvement-9-label" for="improvement-9">Wiki</label>
+  				
+  				<input id="improvement-10" type="checkbox" name="improvements" value="10">
+  				<label id="improvement-10-label" for="improvement-10">Forum</label>
+
+  				<input id="improvement-11" type="checkbox" name="improvements" value="11">
+  				<label id="improvement-11-label" for="improvement-11">Additional Courses</label>
+
+  			<p>Any comments or suggestions?</p>
+  				<textarea id="comment" name="comment" rows="5" cols="60"></textarea>
+
 
 			<button id="submit" type="submit">Submit</button>
 
