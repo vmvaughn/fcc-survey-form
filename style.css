@@ -1,0 +1,29 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.center {
+	text-align: center;
+}
+
+#survey-form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 15px;
+	/*grid-template-rows: repeat(25, 30px); */
+}
+
+.grid-label {
+	grid-column-start: 1;
+}
+
+.grid-input {
+	grid-column-start: 2;
+}
+
+.flex { display: flex; flex-direction: row; justify-content: space-between;}
