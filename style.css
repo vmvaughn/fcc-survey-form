@@ -11,23 +11,36 @@ body {
 	text-align: center;
 }
 
+#name, #email, #number {
+	padding: 7px;
+	width: 300px;
+}
+
+#dropdown, #dropdown2 {
+	width: 150px;
+}
+
 #survey-form {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-row-gap: 15px;
 	grid-column-gap: 20px;
-	max-width: 800px;
 	margin: auto;
-	/*grid-template-rows: repeat(25, 30px); */
 }
 
 .grid-label {
 	grid-column-start: 1;
 	justify-self: end;
+	align-self: center;
 }
 
 .grid-input {
 	grid-column-start: 2;
+	align-self: end;
 }
 
-.flex { display: flex; flex-direction: row; justify-content: space-between;}
+#survey-form p {
+	text-align-last: right;
+}
+
+.flex { display: flex; flex-direction: row;}
