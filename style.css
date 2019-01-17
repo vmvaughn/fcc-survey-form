@@ -11,6 +11,15 @@ body {
 	text-align: center;
 }
 
+#title {
+  margin-bottom: 10px;
+}
+
+#description {
+  font-size: 1.3em;
+  margin-bottom: 25px;
+}
+
 #name, #email, #number {
 	padding: 7px;
 	width: 300px;
@@ -66,4 +75,70 @@ body {
 	font-size: 1.3em;
 	border-radius: 10px;
 	background-color: #b1c8ed;
+  margin: 10px 0;
 }
+
+@media (max-device-width: 425px) {
+	body {
+		font-size: .9em;
+		font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+	}
+
+		#survey-form {
+			grid-template-columns: 1fr;
+      max-width: 400px;
+	}
+
+		.grid-input {
+			grid-column-start: 1;
+			justify-self: start;
+	}
+
+		.grid-label {
+			grid-column-start: 1;
+			justify-self: start;
+	}
+
+		#radio-label {
+			justify-self: start;
+			grid-row-start: 9;
+			grid-row-end: 11;
+			align-self: start;
+			padding-left: 0;
+			text-align-last: start;
+	}
+
+		#checkbox-label {
+			grid-row-start: 16;
+			grid-row-end: 18;
+			align-self: start;
+			padding-left: 0px;
+			text-align-last: start;
+	}
+  
+    	#survey-form label {
+      		font-size: 1.3em;
+ 	}
+
+    	#survey-form p {
+      		font-size: 1.3em;
+  	}
+  
+    	#comment {
+      		width: 250px;
+  	}
+
+		#submit {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			width: 150px;
+			height: 50px;
+			justify-self: center;
+			font-size: 1.3em;
+			border-radius: 10px;
+			background-color: #b1c8ed;
+      		margin: 10px 0;
+	}
+}
+
